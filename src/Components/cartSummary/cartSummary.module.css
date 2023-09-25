@@ -1,68 +1,73 @@
 /* CartSummary.module.css */
 
 .cartSummary {
-    background-color: white;
-    padding: 15px;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
+  background-color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summaryDivider {
+  border-top: 1px solid #000;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.redText {
+  color: red;
+}
+
+.greenText {
+  color: green;
+}
+
+.boldText {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.checkoutButton {
+  width: 100%;
+  background-color: #EBBD91;;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.paymentMethods {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.paymentMethods img {
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+  /* Responsive Styles for Mobile View */
+  @media (max-width: 768px) {
+    .cartSummary{
+      margin-left: 16px;
+      margin-right: 16px;
+    }
   }
-  
-  .summaryItem {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .summaryDivider {
-    border-top: 1px solid #000;
-    margin: 10px 0;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .summaryTotal {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .redText {
-    color: red;
-  }
-  
-  .greenText {
-    color: green;
-  }
-  
-  .boldText {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .checkoutButton {
-    width: 100%;
-    background-color: #EBBD91;;
-    color: black;
-    border: none;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .paymentMethods {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .paymentMethods img {
-    width: 40px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  

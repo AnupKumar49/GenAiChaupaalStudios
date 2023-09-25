@@ -2,10 +2,9 @@
 
 /* Shared Styles */
 .cart {
-  padding: 20px 16px; /* Margin for mobile view */
-  margin: 0 auto; /* Center the content horizontally */
+  padding:20px 0px;
+  margin: 0 120px; /* Margin for desktop view */
   box-sizing: border-box;
-  max-width: 1200px; /* Set a max-width for larger screens */
 }
 
 .cartHeading {
@@ -24,6 +23,7 @@
 .cartItemsBlock {
   flex: 9; /* 10 parts of 12 for desktop view */
   margin: 0 16px; /* Margin for mobile view */
+/* Allow cart items to wrap on mobile */
 }
 
 /* Right 2:10 Block */
@@ -48,6 +48,6 @@
   }
 
   .cartHeading {
-    text-align: center; /* Center the heading on mobile */
+    text-align: start; /* Center the heading on mobile */
   }
 }

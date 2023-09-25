@@ -1,125 +1,126 @@
 /* CartItem.module.css */
 
 .cartItem {
-    background-color: white;
-    display: flex;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    
-  }
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
   
+}
+
+.productImage img {
+  width: 100; /* Adjusted image width */
+  height: 90px; /* Adjusted image height */
+  object-fit: cover;
+  margin-right: 10px;
+  border: 1px solid #ccc; /* Added black border */
+}
+
+.productDetails {
+  flex: 1;
+}
+
+.productName {
+  font-weight: bold;
+}
+
+.productInfo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.infoItem {
+  margin-right: 10px;
+}
+
+.sellerName {
+  margin-top: 5px;
+}
+
+.productActions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; /* Adjusted button alignment to the right */
+}
+
+.actionButton {
+  margin-top: 10px;
+  background-color: white; /* Changed button background color */
+  color: #EBBD91;; /* Changed button text color */
+  border: 1px solid #ccc; /* Added black border */
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.actionButtonHighlighted {
+  background-color: white; /* Orange background for the Remove button */
+  color: black; /* White text color for the Remove button */
+  border: 1px solid #ccc; /* Orange border for the Remove button */
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.productPrice {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
   .productImage img {
-    width: 100; /* Adjusted image width */
-    height: 90px; /* Adjusted image height */
-    object-fit: cover;
-    margin-right: 10px;
-    border: 1px solid #ccc; /* Added black border */
+    width: 100px; /* Adjusted image width for mobile view */
+    height: 100px; /* Adjusted image height for mobile view */
+    margin-right: 0;
   }
-  
+
   .productDetails {
-    flex: 1;
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .productName {
-    font-weight: bold;
-  }
-  
+
   .productInfo {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .infoItem {
-    margin-right: 10px;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
-  
+
   .sellerName {
     margin-top: 5px;
   }
-  
+
   .productActions {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end; /* Adjusted button alignment to the right */
-  }
-  
-  .actionButton {
+    align-items: center;
+    width: 100%;
     margin-top: 10px;
-    background-color: white; /* Changed button background color */
-    color: #EBBD91;; /* Changed button text color */
-    border: 1px solid #ccc; /* Added black border */
-    padding: 5px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-right: 10px;
   }
-  
-  .actionButtonHighlighted {
-    background-color: white; /* Orange background for the Remove button */
-    color: black; /* White text color for the Remove button */
-    border: 1px solid #ccc; /* Orange border for the Remove button */
-    padding: 5px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
+
+  .actionButton {
+    margin: 5px 0;
+    margin-right: 5px;
   }
+
   .productPrice {
     font-weight: bold;
     margin-top: 10px;
-    font-size: 20px;
   }
-  
-  /* Responsive Styles for Mobile View */
-  @media (max-width: 768px) {
-    .cartItem {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 15px;
-    }
-  
-    .productImage img {
-      width: 100px; /* Adjusted image width for mobile view */
-      height: 100px; /* Adjusted image height for mobile view */
-      margin-right: 0;
-    }
-  
-    .productDetails {
-      width: 100%;
-      margin-top: 10px;
-    }
-  
-    .productInfo {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .infoItem {
-      margin-right: 0;
-      margin-bottom: 5px;
-    }
-  
-    .sellerName {
-      margin-top: 5px;
-    }
-  
-    .productActions {
-      align-items: center;
-      width: 100%;
-      margin-top: 10px;
-    }
-  
-    .actionButton {
-      margin: 5px 0;
-      margin-right: 5px;
-    }
-  
-    .productPrice {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  }
-  
+}
