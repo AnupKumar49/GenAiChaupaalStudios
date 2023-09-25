@@ -1,0 +1,14 @@
+
+
+/* reviewRating.css */
+.review-rating {
+    padding: 0 16px;
+    border-bottom: 1px solid #E0E0E0;; /* Default padding for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    .review-rating {
+      padding: 0 120px; /* Padding for desktop */
+    }
+  }
+  

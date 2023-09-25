@@ -1,0 +1,56 @@
+/* Default styles for desktop */
+.description {
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0 120px; /* 120px left and right padding */
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;;
+  line-height: 24px !important;;
+  margin-top: 40px;
+
+  @media (max-width: 767px) {
+    margin-top: 24px; /* 16px left and right padding */
+    
+  }
+}
+
+.ql-container {
+  border: none !important;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 767px) {
+  .description {
+    padding: 0 16px; /* 16px left and right padding */
+  }
+
+  /* Adjust text alignment for better readability */
+  
+}
+p {
+  text-align: justify;
+}
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.ql-editor {
+  padding: 0;
+  padding-bottom: 40px;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;;
+  line-height: 24px !important;;
+
+  @media (max-width: 767px) {
+    
+    padding-bottom:24px; /* 16px left and right padding */
+    
+  }
+}

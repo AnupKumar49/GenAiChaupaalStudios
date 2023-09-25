@@ -1,0 +1,39 @@
+/* Star Rating Container */
+.star-rating-container {
+    display: flex;
+    align-items: center; /* Center-align items vertically */
+  }
+  
+  /* Star Rating Stars */
+  .star-rating-stars {
+    flex-shrink: 0; /* Prevent stars from shrinking */
+  }
+  
+
+/* ... Other styles ... */
+
+/* Star Rating Text */
+.star-rating-text {
+    display: flex;
+    flex-direction: row; /* Display items in a row */
+    align-items: center; /* Center-align items vertically */
+    padding-left: 24px;
+  }
+  
+  /* Star Rating Text Paragraphs */
+  .star-rating-text p {
+    margin: 0;
+  }
+  
+  /* Add 24px of horizontal padding between average rating and total reviews */
+  .star-rating-text p:first-child {
+    color: green; /* Set the color to gold */
+    padding-right: 24px;
+  }
+  
+  /* Style the Average Rating */
+  .average-rating {
+    color: gold; /* Set the color to gold */
+    font-size: 14px; /* Set the font size to 14px */
+  }
+  

@@ -1,0 +1,49 @@
+/* Header.css */
+.container {
+  padding: 0 !important;
+}
+/* Set the background color */
+.header-navbar {
+  background-color: #EBBD91;
+}
+
+/* Set the font color, font weight, and font size for links */
+.nav-link {
+  color: black;
+  font-weight: 600 !important;
+  font-size: 18px !important; /* Increase the font size to your desired value */
+}
+
+/* Change styles for the toggle button (hamburger menu) */
+.navbar-toggler-icon {
+  background-color: white;
+  border: 1px solid black;
+}
+
+#navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  /* Reduce left and right padding to 16px for mobile */
+  .container {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  /* Override justify-content for mobile to center the links */
+  .navbar-nav {
+    justify-content: center !important;
+  }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 768px) {
+  /* Increase left and right padding to 120px for desktop */
+  .container {
+    margin-left: 120px !important;
+    margin-right: 120px !important;
+  }
+}

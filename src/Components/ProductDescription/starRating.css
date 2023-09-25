@@ -1,0 +1,23 @@
+/* Star Rating Container */
+.star-rating-container {
+    display: flex;
+    align-items: center; /* Center-align items vertically */
+  }
+  
+  /* Star Rating Stars */
+  .star-rating-stars {
+    flex-shrink: 0; /* Prevent stars from shrinking */
+  }
+  
+  /* Star Rating Text */
+  .star-rating-text {
+    display: flex;
+    flex-direction: column; /* Stack rating and reviews vertically */
+    margin-left: 10px; /* Add spacing between stars and text */
+  }
+  
+  /* Star Rating Text Paragraphs */
+  .star-rating-text p {
+    margin: 0; /* Remove default margins for paragraphs */
+  }
+  

@@ -1,0 +1,71 @@
+/* promotion-banner.css */
+.promotion-banner {
+  
+    padding: 0 120px; /* Adjust as needed */
+    padding-bottom: 24px;
+  }
+  @media (max-width: 767px) {
+    .promotion-banner {
+      padding: 0 16px; 
+      padding-bottom: 16px;/* 16px padding on both left and right for mobile */
+    }
+  }
+.promotion-banner-content {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    background: #005ADE;
+    border-radius: 8px;
+    padding: 16px; /* Adjust as needed */
+  }
+
+  .promotion-banner-content-body{
+    display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+  }
+  
+  .promotion-banner-title {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    color: #fff; /* Adjust text color for visibility */
+  }
+  
+  .promotion-banner-description {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 10px 0;
+    color: #fff; /* Adjust text color for visibility */
+  }
+  
+  .shop-now-button {
+   
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+    background-color: #F47700;
+    border-radius: 6px;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #f0f0f0; /* Button background color on hover */
+  }
+  

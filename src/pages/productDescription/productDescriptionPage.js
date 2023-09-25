@@ -1,17 +1,22 @@
-import './App.css';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '../../Components/Navbar/navbar';
+import Header from '../../Components/Header/Header';
+import Breadcrumb from '../../Components/Breadcrumbs/Breadcrumb';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import chaupaalshirt from './Assets/chaupaalshirt.png'; // Import your image files
-import chaupaalmug from './Assets/chaupaalmug.png'; // Import your image files
-import chaupaalwatch from './Assets/chaupaalwatch.png'; // Import your image files
-import chaupaalheadphone from './Assets/chaupaalheadphone.png';
-import chaupaalwallet from  './Assets/chaupaalwallet.png';// Import your image files
-import Footer from './Components/Footer/footer';
-import {  Routes, Route } from 'react-router-dom';
-import ProductDescriptionPage from './pages/productDescription/productDescriptionPage';
-import CartPage from './pages/cart/cartPage';
+import ProductDescription from '../../Components/ProductDescription/productDescription';
+import Description from '../../Components/Description/description';
+import ReviewRating from '../../Components/ReviewRating/reviewRating';
+import SimilarItem from '../../Components/SimillarItem/simillarItem';
+import chaupaalshirt from '../../Assets/chaupaalshirt.png'; // Import your image files
+import chaupaalmug from '../../Assets/chaupaalmug.png'; // Import your image files
+import chaupaalwatch from '../../Assets/chaupaalwatch.png'; // Import your image files
+import chaupaalheadphone from '../../Assets/chaupaalheadphone.png';
+import chaupaalwallet from  '../../Assets/chaupaalwallet.png';// Import your image files
+import PromotionalBanner from '../../Components/PromotionalBanner/promotionalBanner';
 
-
-function App() {
+const ProductDescriptionPage = () => {
+  
   const breadcrumbItems = [
     { id: 1, label: 'Home', link: '/' },
     { id: 2, label: 'Products', link: '/products' },
@@ -57,20 +62,27 @@ const similarProducts = [
   // Add more similar products as needed
 ];
 
+
+const [quantity, setQuantity] = useState(0); 
+const handlequantity = (quantity) => {
+  setQuantity(quantity)
+};
+
   return (
-    <div className="App">
-      
-  
-      
-      <Routes>
-        <Route path="/" element={<ProductDescriptionPage/>} />
-        <Route path="/cart" element={<CartPage/>} />
-      </Routes>
-    
-      <Footer />
-     
+    <div>
+      <Navbar quantity={quantity}/>
+       <Header />
+      <Breadcrumb items={breadcrumbItems} />
+      <ProductDescription handlequantity={handlequantity} />
+      <Description title={'Description'} content={description1} />
+      <Description title={'Key Features'} content={description2} />
+      <ReviewRating />
+      <SimilarItem similarProducts={similarProducts}/>
+      <PromotionalBanner />
+      {/* <h1>Product Description</h1>
+      <Link to="/cart">View Cart</Link> */}
     </div>
   );
-}
+};
 
-export default App;
+export default ProductDescriptionPage;

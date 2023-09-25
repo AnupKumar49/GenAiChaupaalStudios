@@ -1,0 +1,53 @@
+/* Cart.module.css */
+
+/* Shared Styles */
+.cart {
+  padding: 20px 16px; /* Margin for mobile view */
+  margin: 0 auto; /* Center the content horizontally */
+  box-sizing: border-box;
+  max-width: 1200px; /* Set a max-width for larger screens */
+}
+
+.cartHeading {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.cartContent {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next row on mobile */
+  margin: 0 -16px; /* Negative margin for mobile view */
+}
+
+/* Left 10:2 Block */
+.cartItemsBlock {
+  flex: 9; /* 10 parts of 12 for desktop view */
+  margin: 0 16px; /* Margin for mobile view */
+}
+
+/* Right 2:10 Block */
+.summaryBlock {
+  flex: 3; /* 2 parts of 12 for desktop view */
+  margin: 0 16px; /* Margin for mobile view */
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .cart {
+    margin: 0 16px; /* Margin for mobile view */
+  }
+
+  .cartItemsBlock, .summaryBlock {
+    flex: 100%; /* Full width for mobile view */
+    margin: 0; /* Remove margin for mobile view */
+  }
+
+  .cartContent {
+    flex-direction: column; /* Stack blocks in a column on mobile */
+  }
+
+  .cartHeading {
+    text-align: center; /* Center the heading on mobile */
+  }
+}

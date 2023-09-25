@@ -1,0 +1,19 @@
+
+  .similar-item {
+    padding: 24px 16px; /* Top and bottom padding is 40px, left and right padding is 116px for mobile view */
+  
+    @media (min-width: 768px) {
+      padding: 40px 120px; /* Increase left and right padding to 120px for desktop view */
+    }
+  
+  }
+
+  
+.similar-item-title {
+  padding-bottom: 16px;
+  @media (max-width: 767px) {
+    padding-bottom: 8px; /* Add 24px padding to the bottom of the "Frequently Bought" title for mobile view */
+  }
+
+  /* For desktop view, you can set a different padding if needed */
+}

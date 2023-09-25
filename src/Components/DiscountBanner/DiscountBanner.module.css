@@ -1,0 +1,56 @@
+/* DiscountBanner.module.css */
+
+.discountBanner {
+    background: linear-gradient(90deg, #0d1321 50%, #0d1321 50%, #0d3d4d 50%);
+    background-size: 200% 100%;
+    animation: gradient 3s linear infinite;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius:10px;
+    margin-top: 20px;
+  }
+  
+  .leftContent {
+    flex: 1;
+  }
+  
+  .heading {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .rightContent {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .shopNowButton {
+    background-color: #EBBD91;; /* Yellow-orange background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradient {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  

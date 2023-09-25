@@ -1,0 +1,29 @@
+/* Default styles for both desktop and mobile */
+.breadcrumb-container {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 24px 16px; /* 24px top and bottom, 16px left and right for mobile view */
+}
+
+/* Breadcrumb item styles */
+.breadcrumb-item {
+  display: inline-block;
+  margin-right: 5px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Styling for the separator (e.g., "›") */
+.breadcrumb-separator {
+  margin: 0 5px;
+  color: #666;
+}
+
+/* Media query for desktop view (greater than or equal to 768px) */
+@media (min-width: 768px) {
+  .breadcrumb-container {
+      padding: 24px 120px; /* 24px top and bottom, 120px left and right for desktop view */
+  }
+}
